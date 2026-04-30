@@ -10,7 +10,7 @@ import Orders from "./pages/Orders";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import TopBanner from "./components/TopBanner";
-import AuthModal from "./components/AuthModal";
+// import AuthModal from "./components/AuthModal";
 
 function App() {
   const user = useSelector((state) => state.auth.user);
@@ -29,7 +29,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      {showPrompt && <AuthModal onClose={() => setShowPrompt(false)} />}
+      {/* {showPrompt && <AuthModal onClose={() => setShowPrompt(false)} />} */}
       <TopBanner />
       <Navbar />
 
